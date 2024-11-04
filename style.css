@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(169, 169, 169);
+}
+
+.navbar {
+  display: flex;
+  background-color: black;
+}
+
+.navbar-menu {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  gap: 1em;
+  padding: 10px;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.search-input {
+  padding: 0.5em;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.search-button {
+  background-color: grey;
+}
+
+.image-container {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+.image-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.article-box {
+  width: 300px;
+  border: 15px solid white;
+  margin: 20px;
+}
+.article-boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p {
+  padding: 10px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.active {
+  background-color: grey;
+}
+
+-------------------------------------- 
+
+/* ############################################################################################*/
+
+
+
+
+.vertical2 {
+  border-left: 1px solid #0000004d;
+  height: 156px;
+  grid-area: line2;
+  margin-top: auto;
+  margin-bottom: auto;
+  /* position: absolute;
+    left: 21%;
+    bottom: -23%; */
+}
+.middle_para {
+  grid-area: second;
+  display: flex;
+  grid-area: last;
+  grid-template-columns: 1fr;
+  display: flex;
+}
+
+.footer_About {
+  /* margin: auto; */
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer_About_para {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.footer_About_head {
+  color: rgb(103, 47, 47);
+}
+.footer_About_links {
+  font-weight: lighter;
+  color: black;
+}
+.last_para {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.footer_form_mid {
+  margin-top: 3%;
+  display: flex;
+  width: 100%;
+}
+.footer_mid_icons {
+  margin: 2%;
+  /* margin-left: 2%; */
+}
+.footer_last {
+  margin-bottom: 4%;
+}
+.footer_mid_icons_inner {
+  font-size: 2rem;
+  color: rgb(164, 164, 255);
+  /* border: 1px solid blue; */
+}
+.icon_section {
+  /* you can either set it to flex or block */
+  display: block;
+
+  margin-left: 15%;
+}
+/* ====================================== MID = F O O T E R  ENDS ======================================= */
+
+/* ====================================== LAST = F O O T E R  STARTS ======================================= */
+.subscriber_last {
+  background-color: #16181c;
+  height: 200px;
+  width: 100%;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 2fr 0.01fr 3fr 1fr;
+  grid-template-areas: "logo line3 mid-section copyright";
+}
+
+.footer_logo_last {
+  text-align: end;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.footer_last_mid_para {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#unleash {
+  color: rgb(97, 97, 97);
+  font-weight: lighter;
+}
+
+.copyright2 {
+  color: rgb(145, 145, 145);
+  font-size: 0.7rem;
+  font-weight: lighter;
+}
+
+.footer_last_last_para {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* ====================================== LAST = F O O T E R  ENDS ======================================= */
+
+/* -----------------------------MEDIA QUERIES----------------------------- */
+
+.subscriber_mid {
+  grid-template-columns: 1fr;
+  /* grid-template-rows: 1.2fr 0.01fr 1fr 0.01fr 1fr; */
+  grid-template-rows: 0.9fr 0.01fr 0.9fr 0.01fr 0.9fr;
+  grid-template-areas:
+    "first"
+    "horizontal"
+    "second"
+    "horizontal2"
+    "last";
+  height: 100%;
+  grid-gap: 0px;
+}
+
+.first_para {
+  margin-left: 3%;
+}
+
+.middle_para {
+  flex-wrap: wrap;
+}
+
+.last_para {
+  text-align: center;
+}
+
+.footer_mid_subscriber_button {
+  margin-right: 0;
+}
+
+.vertical {
+  display: none;
+}
+
+.vertical2 {
+  display: none;
+}
+
+.vertical3 {
+  display: none;
+}
+
+.horizontal {
+  border-bottom: 1px solid #fff0234d;
+  grid-area: horizontal;
+}
+
+.horizontal2 {
+  border-bottom: 1px solid #eaff764d;
+  grid-area: horizontal2;
+}
+
+.contacts h4 {
+  text-align: left;
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.contacts {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.icon_section {
+  margin-left: 0%;
+  justify-content: center;
+}
+
+.footer_mid_icons_inner {
+  font-size: 3rem;
+}
+
+.subscriber_last {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1%;
+}
+
+.footer_logo_last {
+  text-align: center;
+  color: aliceblue;
+}
+
+.footer_last_mid_para {
+  text-align: center;
+}
+
+.footer_last_last_para {
+  text-align: center;
+}
+
+.footer_last {
+  margin: 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .subscriber_head {
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+  }
+
+  .subscriber_mid {
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1.2fr 0.01fr 1fr 0.01fr 1fr; */
+    grid-template-rows: 0.5fr 0.01fr 0.5fr 0.01fr 0.5fr;
+    grid-template-areas:
+      "first"
+      "horizontal"
+      "second"
+      "horizontal2"
+      "last";
+    height: 100%;
+    grid-gap: 0px;
+  }
+
+  .horizontal {
+    border-bottom: 1px solid #ee40404d;
+    grid-area: horizontal;
+  }
+
+  .horizontal2 {
+    border-bottom: 1px solid #433f3f4d;
+    grid-area: horizontal2;
+  }
+
+  .middle_para {
+    text-align: left;
+  }
+
+  .footer_About {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 8.4%;
+    margin-right: 8.4%;
+  }
+
+  .footer_About_head {
+    font-size: 1.4rem;
+  }
+
+  .footer_About_links {
+    font-size: 1.6rem;
+  }
+
+  #footer_first_head {
+    font-size: 2rem;
+  }
+
+  .footer_para h5 {
+    font-size: 1.2rem;
+  }
+}
