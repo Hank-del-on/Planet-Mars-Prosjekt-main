@@ -208,9 +208,13 @@ footer {
 .bottom_note2 {
   background-color: #131313;
   color: aliceblue;
-  height: 20px;
-  width: 40px;
   bottom: 0;
+  font-size: 12px;
+  width: 250px;
+  border-width: 1px;
+  padding-left: 3px;
+  padding-bottom: 10px;
+  word-wrap: break-word;
 }
 /* grid-gap: 25px;
   grid-template-columns: 2fr 0.1fr 1fr 1fr; */
